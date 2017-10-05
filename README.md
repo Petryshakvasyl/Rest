@@ -1,5 +1,5 @@
-
 #Simple REST Service
+---
 
 Simple REST service which returns details of given Github repository.
 
@@ -9,8 +9,6 @@ Details include:
 * git clone url
 * number of stargazers
 * date of creation (ISO format)
-
-You should make GET request  /repositories/{owner}/{repository-name}
 
 The API of the service looks as follows:
 
