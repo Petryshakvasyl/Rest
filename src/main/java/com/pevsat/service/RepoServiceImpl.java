@@ -5,7 +5,9 @@ import com.pevsat.dto.RepoDto;
 import com.pevsat.dto.RepoDtoAdapter;
 import com.pevsat.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.*;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.web.client.AsyncRestTemplate;
@@ -17,10 +19,10 @@ import org.springframework.web.client.AsyncRestTemplate;
 public class RepoServiceImpl implements RepoService{
 
     @Autowired
-    AsyncRestTemplate asyncRestTemplate;
+    private AsyncRestTemplate asyncRestTemplate;
 
     @Autowired
-    HttpEntity<String> entity;
+    private HttpEntity<String> entity;
 
     @Override
     public ListenableFuture<RepoDto> getRepo(String owner, String name) {

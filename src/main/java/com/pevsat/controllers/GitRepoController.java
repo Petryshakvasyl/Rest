@@ -24,7 +24,7 @@ public class GitRepoController {
     private static final Logger log = LoggerFactory.getLogger(GitRepoController.class);
 
     @Autowired
-    RepoServiceImpl service;
+    private RepoServiceImpl service;
 
 
     @RequestMapping("/repositories/{owner}/{repositoryName}")
