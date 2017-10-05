@@ -1,4 +1,4 @@
-#Simple REST Service
+# Simple REST Service
 ---
 
 Simple REST service which returns details of given Github repository.
@@ -10,22 +10,16 @@ Details include:
 * number of stargazers
 * date of creation (ISO format)
 
-The API of the service looks as follows:
+## The API of the service looks as follows:
 
 GET /repositories/{owner}/{repository-name}
 
 {
-
 "fullName": "...",
-
 "description": "...",
-
 "cloneUrl": "...",
-
 "stars": 0,
-
 "createdAt": "..."
-
 }
 
-##The service can serve more then 20 requests per second.
+## The service can serve more then 20 requests per second.
